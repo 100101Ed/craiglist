@@ -72,7 +72,7 @@ public class TestCraiglist {
 		this.driver.findElement(By.xpath("//article[@id='pagecontainer']/section/form/button")).click();
 	}
 
-	// @Test
+	@Test
 	public void queryCragilistTest() {
 		// QueryCraiglist query = new QueryCraiglist("pets");
 		// System.out.println(query.toString());
@@ -120,7 +120,7 @@ public class TestCraiglist {
 
 	@AfterClass(alwaysRun = true)
 	public void tearDown() throws Exception {
-		Thread.sleep(5000);
+		// Thread.sleep(5000);
 		this.driver.quit();
 		String verificationErrorString = this.verificationErrors.toString();
 		if (!"".equals(verificationErrorString)) {
